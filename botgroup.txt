@@ -1,0 +1,25 @@
+ pip install ruamel.yaml
+
+
+ pip3 uninstall alembic
+pip3 install alembic
+
+ pip install python-magic-bin==0.4.14
+
+1231234
+
+
+云主机mysql
+mysql -u root -p 'new@password.'
+update mysql.user set password = password('new@password.') where user = 'root';
+flush privileges;
+
+
+update mysql.user set Host = '0.0.0.0'  where Host = '::1';
+
+update mysql.user set Host = '%'  where Host = '0.0.0.0';
+
+sudo service mysql restart
+
+
+CREATE DATABASE testdjango;
