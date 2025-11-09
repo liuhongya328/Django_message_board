@@ -8,12 +8,12 @@
 </head>
 <body>
 <form action="{% url 'formUrl' %}" method="post" class="smart-green">
-    <h1>留言板
-        <span>显示当前及历史留言信息.</span>
+    <h1>提交板
+        <span>显示当前及历史提交信息.</span>
     </h1>
     {% for message in all_messages %}
         <label>
-            <span>{{ message.name }} :</span><br>
+            <span style="color: blue;font-size: 110%;" >{{ message.name }}&nbsp;&nbsp;&nbsp;{{message.time }} </span> <br>
             <h2>{{ message.message }}</h2>
             <div class="error-msg"></div>
         </label>
@@ -28,3 +28,9 @@
 </form>
 </body>
 </html>
+
+    <script type="text/javascript">
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+    </script>

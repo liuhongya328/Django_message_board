@@ -88,3 +88,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.highlight {
+    color: green;
+    font-weight: bold;
+}

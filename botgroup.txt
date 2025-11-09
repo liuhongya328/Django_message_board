@@ -23,3 +23,19 @@ sudo service mysql restart
 
 
 CREATE DATABASE testdjango;
+
+
+python manage.py migrate
+
+python manage.py createsuperuser  admin  admin
+
+
+root/qwerzxc@~A1
+
+
+wget https://www.python.org/ftp/python/3.13.5/Python-3.13.5.tgz
+
+/usr/tmp
+
+ python -c 'import datetime; print(datetime.datetime.now().strftime(\'%Y-%m-%d %H:%M:%S\'))'
+

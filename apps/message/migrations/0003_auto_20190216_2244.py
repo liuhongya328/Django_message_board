@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='usermessage',
-            options={'ordering': ('-object_id',), 'verbose_name_plural': '用户留言信息'},
+            options={'ordering': ('-object_id',), 'verbose_name_plural': '用户提交信息'},
         ),
         migrations.AlterModelTable(
             name='usermessage',
